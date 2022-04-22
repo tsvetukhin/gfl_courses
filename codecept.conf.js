@@ -12,7 +12,7 @@ exports.config = {
   output: './output',
   helpers: {
     Playwright: {
-      url: 'http://localhost',
+      url: 'http://automationpractice.com',
       show: true,
       browser: 'chromium'
     }
