@@ -29,11 +29,8 @@ module.exports = {
     I.fillField(this.firstUserName, user.firstName);
     I.fillField(this.lastUserName, user.lastName);
     I.fillField(this.userPassword, user.password);
-    I.click(this.userDate);
     I.selectOption(this.userDate, user.birthDay);
-    I.click(this.userMonth);
     I.selectOption(this.userMonth, user.birthMonth);
-    I.click(this.userYear);
     I.selectOption(this.userYear, user.birthYear);
     I.click(this.newsSubscribe);
     I.click(this.offersSubscribe);
@@ -41,10 +38,8 @@ module.exports = {
     I.fillField(this.userAddress, user.address);
     I.fillField(this.userAddress2, user.address2);
     I.fillField(this.userCity, user.city);
-    I.click(this.userState);
     I.selectOption(this.userState, user.state);
     I.fillField(this.userPostalCode, user.postalCode);
-    I.click(this.userCountry);
     I.selectOption(this.userCountry, user.country);
     I.fillField(this.userAdditInfo, user.info);
     I.fillField(this.userHomePhoneNumb, user.homePhone);
