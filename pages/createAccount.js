@@ -6,7 +6,7 @@ module.exports = {
   lastUserName: { css: '#customer_lastname' },
   userPassword: { css: '#passwd' },
   userDate: { css: '#days' },
-  userMonth: { css: '#months' },
+  userMonth: { css: 'form select[name=months]' },
   userYear: { css: '#years' },
   newsSubscribe: { css: '#newsletter' },
   offersSubscribe: { css: '#optin' },
@@ -38,9 +38,9 @@ module.exports = {
     I.fillField(this.userAddress, user.address);
     I.fillField(this.userAddress2, user.address2);
     I.fillField(this.userCity, user.city);
+    I.click(this.userState);
     I.selectOption(this.userState, user.state);
     I.fillField(this.userPostalCode, user.postalCode);
-    I.selectOption(this.userCountry, user.country);
     I.fillField(this.userAdditInfo, user.info);
     I.fillField(this.userHomePhoneNumb, user.homePhone);
     I.fillField(this.userMobPhoneNumb, user.mobPhone);
@@ -54,3 +54,5 @@ module.exports = {
   },
 
 }
+
+

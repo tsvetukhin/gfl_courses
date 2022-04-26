@@ -3,7 +3,7 @@ let user = {
     lastName: 'Rose',
     password: '12345678',
     birthDay: '2',
-    birthMonth: 'April',
+    birthMonth: '5',
     birthYear: '2019',
     company: 'Oracle',
     address: '801 Tom Martin Dr.',
