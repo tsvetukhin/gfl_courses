@@ -19,12 +19,13 @@ let user = {
 
 Feature('Store');
 
-Scenario('test', ({ I, homePage, authPage, createAccountPage }) => {
+Scenario('test', ({ I, homePage, authPage, createAccountPage, accountPage }) => {
     homePage.openStore();
     homePage.clickSignIn();
     authPage.fillNewUserEmail(Date.now() + '@gmail.com');
     authPage.clickCreateAccountButton();
     createAccountPage.fillNewUserForm(user);
+    accountPage.titleCheck();
     pause();
 });
 
